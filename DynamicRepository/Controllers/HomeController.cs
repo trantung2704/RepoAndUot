@@ -19,7 +19,7 @@ namespace DynamicRepository.Controllers
             _studentService.Add(new Student {Id = Guid.NewGuid(), FirstName = "Nguyen", LastName = "An"});
             _studentService.SaveChanges();
 
-            var student = _studentService.FindByName("Nguyen");
+            var student = _studentService.FindByName("Nguyen Another thing new to commit");
             return View();
         }
 
